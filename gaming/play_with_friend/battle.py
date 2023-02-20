@@ -253,8 +253,8 @@ class GamePVP:
                                 pvp_pvp.pvp(move2, move1)
                             print('Игрок', move1.name, 'кинул', [i.name.name for i in move1.dice_sides])
                             print('Игрок', move2.name, 'кинул', [i.name.name for i in move2.dice_sides])
-                            print('Игрок', move1.name, 'наносит урон', pvp_pvp.powaaa(move1, move2)[0])
-                            print('Игрок', move2.name, 'наносит урон', pvp_pvp.powaaa(move1, move2)[1])
+                            print('Игрок', move1.name, 'наносит урон', pvp_pvp.damage_count(move1, move2)[0])
+                            print('Игрок', move2.name, 'наносит урон', pvp_pvp.damage_count(move1, move2)[1])
                             p1_life = move1.life
                             p2_life = move2.life
                             if next_button.draw(self.surface):

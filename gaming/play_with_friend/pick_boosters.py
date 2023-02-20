@@ -2,7 +2,7 @@ import pygame
 import utilities.window_gameset as cn
 from utilities.button import Button
 from gaming.play_with_friend import client_friend
-from gaming.play_with_friend.game_process import GamePVP
+from gaming.play_with_friend.battle import GamePVP
 from utilities.draw_text import draw_text
 from utilities.get_image import get_image
 

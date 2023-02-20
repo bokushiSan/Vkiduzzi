@@ -1,6 +1,6 @@
 import pygame
 
-
+# TODO:add docstrings
 class TextInputBox(pygame.sprite.Sprite):
     def __init__(self, x, y, w, font):
         super().__init__()

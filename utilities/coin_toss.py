@@ -1,27 +1,30 @@
 import random
 
 
-def coin_winner(stavka, player_to_throw, player_not_to_throw):
+def coin_winner(bet, player_to_throw, player_not_to_throw):
+    """
+    Random player toss the coin. If the guess is correct, he wins, else, he loses.
+    :param bet: str | player's bet - 'Vkid' or 'Uzzi'
+    :param player_to_throw: str | name of a player, who throw the coin
+    :param player_not_to_throw: str | name of a player, who not throw the coin
+    :return winner: str | name of winner of the coin toss
+    :return loser: str | name of loser of the coin toss
+    """
     player_throw = player_to_throw
     player_not_throw = player_not_to_throw
     side = random.choice(['Vkid', 'Uzzi'])
     if side == 'Vkid':
-        print("Выпал Vkid")
-        if stavka == "Vkid":
+        if bet == "Vkid":
             winner, loser = player_throw, player_not_throw
-        elif stavka == 'Uzzi':
+        elif bet == 'Uzzi':
             winner, loser = player_not_throw, player_throw
         else:
-            print('Какая-то ошибочка')
             exit()
     elif side == 'Uzzi':
-        print("Выпал Uzzi")
-        if stavka == "Vkid":
+        if bet == "Vkid":
             winner, loser = player_not_throw, player_throw
-        elif stavka == 'Uzzi':
+        elif bet == 'Uzzi':
             winner, loser = player_throw, player_not_throw
         else:
-            print('Какая-то ошибочка')
             exit()
-    print('Победил', winner)
     return winner, loser, side
