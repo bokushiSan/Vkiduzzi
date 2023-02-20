@@ -1,6 +1,12 @@
 class Helmet:
-
+    """
+    Helmet defend from Axe.
+    """
     def __init__(self, boost=False):
+        """
+        Initialize class variables (abilities).
+        :param boost: bool | if boost is True, add 1 gold
+        """
         self.name = 'Helmet'
         self.dice_edge_id = 1
         self.power_long = 0
@@ -16,8 +22,14 @@ class Helmet:
 
 
 class Shield:
-
+    """
+    Shield defend from Arrow.
+    """
     def __init__(self, boost=False):
+        """
+        Initialize class variables (abilities).
+        :param boost: bool | if boost is True, add 1 gold
+        """
         self.name = 'Shield'
         self.dice_edge_id = 2
         self.power_long = 0
@@ -33,8 +45,14 @@ class Shield:
 
 
 class Axe:
-
+    """
+    Axe deals 1 unit of health damage. Overlapped by Helmet.
+    """
     def __init__(self, boost=False):
+        """
+        Initialize class variables (abilities).
+        :param boost: bool | if boost is True, add 1 gold
+        """
         self.name = 'Axe'
         self.dice_edge_id = 3
         self.power_long = 0
@@ -50,8 +68,14 @@ class Axe:
 
 
 class Arrow:
-
+    """
+    Arrow deals 1 unit of health damage. Overlapped by Shield.
+    """
     def __init__(self, boost=False):
+        """
+        Initialize class variables (abilities).
+        :param boost: bool | if boost is True, add 1 gold
+        """
         self.name = 'Arrow'
         self.dice_edge_id = 4
         self.power_long = 1
@@ -67,8 +91,14 @@ class Arrow:
 
 
 class Thief:
-
+    """
+    Thief steal 1 gold.
+    """
     def __init__(self, boost=False):
+        """
+        Initialize class variables (abilities).
+        :param boost: bool | if boost is True, add 1 gold
+        """
         self.name = 'Thief'
         self.dice_edge_id = 5
         self.power_long = 0
@@ -84,8 +114,14 @@ class Thief:
 
 
 class Nothing:
-
+    """
+    Nothing deals 0 damage and 0 defence.
+    """
     def __init__(self, boost=False):
+        """
+        Initialize class variables (abilities).
+        :param boost: bool | if boost is True, add 1 gold
+        """
         self.name = 'Nothing'
         self.dice_edge_id = 6
         self.power_long = 0
