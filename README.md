@@ -5,5 +5,5 @@ Dice game based on Assassin's Creed Valhalla game "Orlog".
 
 
 ### Author
-Rustem "bokushi" N./
+Rustem "bokushi" N.\
 Ufa, Russian Federation
